@@ -1,0 +1,5 @@
+# MongoDB Aggregation Pipeline Bug
+This repository demonstrates a common error in MongoDB aggregation pipelines. The provided code exhibits an issue where an aggregation pipeline fails to produce the correct results.  The solution illustrates how to identify and fix such issues using proper data validation and pipeline design.  The example uses Javascript, but the principles apply to other drivers.
+
+## Bug Description
+The bug involves an aggregation pipeline that uses a `$group` stage to count the occurrences of a field. The pipeline intends to return the top 10 most frequent values. However, due to a potential issue in the `$match` stage (or incorrect data), the resulting aggregation returns incorrect counts. This error is common when working with large datasets or complex aggregation pipelines and requires careful debugging and validation of the pipeline stages.
